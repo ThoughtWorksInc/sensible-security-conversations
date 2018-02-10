@@ -1,0 +1,59 @@
+@page {
+    size: 21cm 29.7cm;
+    margin: 30mm 45mm 30mm 45mm; /* change the margins as you want them to be. */
+}
+
+.body-container {
+    font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+    background-color: #f8f8f8;
+    max-width: 80%;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.125em;
+    line-height: 1.5em;
+}
+
+
+div.content {
+    margin: 0cm;
+    width: 80%;
+    min-height: 100%;
+    float: center;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #f8f8f8;
+    background-color: white;
+    line-height: 2.5em;
+    position: relative;
+}
+
+ul {
+    list-style-type: square;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    font-weight: lighter;
+}
+
+table {
+    line-height: 1.2em;
+}
+
+th {
+    font-size: 0.5em;
+    text-align: left;
+    font-weight: lighter;
+}
+
+td.tick {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+td {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+

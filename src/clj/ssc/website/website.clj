@@ -21,8 +21,21 @@
     (html5
      (head)
      [:body {:class "body-container"}
-      [:div.bigcard
+      [:div.content
        [:h1 "Sensible Security Conversations"]
+       [:p "Sensible Security Conversations is a workshop based approach to threat modelling focussed on agile software development teams and modern cloud-based digital systems."]
+       [:hr]
+       [:table
+        [:td "Assets"]
+        [:td "Threats"]
+        [:td "Exposure"]
+        ]
+       [:hr]
+       [:table
+        [:td "CC logo"]
+        [:td "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."]
+        [:td "TW logo"]
+        ]
        ]
       ]
      ))
