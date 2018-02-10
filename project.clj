@@ -1,5 +1,5 @@
 (defproject card-attempt "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+  :description "Card and website generator for Sensible Security Conversations"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
@@ -11,7 +11,6 @@
                  [ring "1.5.0"]
                  [ring/ring-defaults "0.2.1"]
                  [json-html "0.4.0"]
-                 [me.bsima/trello "0.3.0" :exclusions [org.clojure/data.json]]
                  [compojure "1.5.1"]
                  [hiccup "1.0.5"]
                  [yogthos/config "0.8"]
