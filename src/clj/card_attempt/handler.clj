@@ -5,11 +5,13 @@
             [card-attempt.threats :refer [threats-page]]
             [card-attempt.vulns :refer [vulns-page vulns-summary-page]]
             [card-attempt.assets :refer [assets-page]]
+            [ssc.website.website :refer [index-page]]
             ))
 
 ;-----------------------------------------------------
 
 (defroutes routes
+  (GET "/index.html" [] (index-page))
   (GET "/threats" [] (threats-page))
   (GET "/vulns-summary" [] (vulns-summary-page))
   (GET "/vulns" [] (vulns-page))
