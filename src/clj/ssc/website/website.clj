@@ -19,7 +19,9 @@
 ;-----------------------------------------------------
 
 (defn index-page []
-  (let [card "x"]
+  (let [other-deck "https://github.com/ThoughtWorksInc/sensible-security-conversations/raw/master/resources/materials/SensibleSecurityConversations-NCSCDeveloperDen.pdf"
+        expos-card "https://github.com/ThoughtWorksInc/sensible-security-conversations/raw/master/resources/materials/Sensible-Conversations-VulnerabilityExposureCards.pdf"
+        threat-card "https://github.com/ThoughtWorksInc/sensible-security-conversations/raw/master/resources/materials/Sensible-Conversations-Threats.pdf"]
     (html5
      (head)
      [:body {:class "body-container"}
@@ -27,18 +29,18 @@
        [:h1 [:image {:alt "Sensible Security Conversations"
                      :src "https://raw.githubusercontent.com/ThoughtWorksInc/sensible-security-conversations/master/banner-logo.png" :width "670"}]]
        [:p "<b>Sensible Security Conversations</b> is a workshop based approach to threat modelling focussed on agile software development teams and modern cloud-based digital systems."]
-       [:p "This site currently holds the key materials to conduct the workshops, but it is a work in progress. More details will be added over the coming weeks and months."]
-       [:hr]
        [:ul
-        [:li "Overview of approach as given at NCSC Developers Den seminar"]
-        [:li "PDF version of Threat cards for printing out on A4 paper"]
-        [:li "PDF version of Exposure cards for printing out on A4 paper"]
+        [:li [:a {:href other-deck} "Overview of approach"] " as given at NCSC Developers Den seminar"]
+        [:li "PDF version of " [:a {:href threat-card} "Threat Cards"] " for printing out on A4 paper"]
+        [:li "PDF version of " [:a {:href expos-card} "Exposure Cards"] " for printing out on A4 paper"]
        ]
-       [:hr]
+       [:p "This site currently holds the key materials to conduct the workshops, but it is a work in progress. More details will be added over the coming weeks and months."]
        [:table
-        [:td "CC logo"]
+        [:td [:image {:alt "Creative Commons"
+                      :src "https://raw.githubusercontent.com/ThoughtWorksInc/sensible-security-conversations/master/cc.png" :width "80"}]]
         [:td "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."]
-        [:td "TW logo"]
+        [:td [:image {:alt "ThoughtWorks"
+                      :src "https://raw.githubusercontent.com/ThoughtWorksInc/sensible-security-conversations/master/twlogo.png" :width "80"}]]
         ]
        ]
       ]

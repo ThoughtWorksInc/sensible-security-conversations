@@ -21,6 +21,7 @@ div.content {
     border-width: 0.5px;
     border-color: #f8f8f8;
     background-color: white;
+    color: grey;
     position: relative;
 }
 
@@ -29,20 +30,19 @@ h1 {
 }
 
 p {
-    color: grey;
     font-weight: lighter;
     padding: 0.2cm;
 }
 
 ul {
     list-style-type: square;
-    font-size: 0.8em;
     line-height: 1.4em;
     font-weight: lighter;
 }
 
 table {
     line-height: 1.2em;
+    align: center;
 }
 
 th {
