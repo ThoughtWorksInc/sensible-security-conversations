@@ -21,7 +21,8 @@
 (defn index-page []
   (let [other-deck "https://github.com/ThoughtWorksInc/sensible-security-conversations/raw/master/resources/materials/SensibleSecurityConversations-NCSCDeveloperDen.pdf"
         expos-card "https://github.com/ThoughtWorksInc/sensible-security-conversations/raw/master/resources/materials/Sensible-Conversations-VulnerabilityExposureCards.pdf"
-        threat-card "https://github.com/ThoughtWorksInc/sensible-security-conversations/raw/master/resources/materials/Sensible-Conversations-Threats.pdf"]
+        threat-card "https://github.com/ThoughtWorksInc/sensible-security-conversations/raw/master/resources/materials/Sensible-Conversations-Threats.pdf"
+        oreilly-talk "https://www.safaribooksonline.com/library/view/oreilly-security-conference/9781491985359/video316717.html"]
     (html5
      (head)
      [:body {:class "body-container"}
@@ -33,6 +34,7 @@
         [:li [:a {:href other-deck} "Overview of approach"] " as given at NCSC Developers Den seminar"]
         [:li "PDF version of " [:a {:href threat-card} "Threat Cards"] " for printing out on A4 paper"]
         [:li "PDF version of " [:a {:href expos-card} "Exposure Cards"] " for printing out on A4 paper"]
+        [:li "O'Reilly Talk by " [:a {:href "https://twitter.com/jgumbley"} "@jgumbley"] " with background " [:a {:href oreilly-talk} "about approach"]]
        ]
        [:p "This site currently holds the key materials to conduct the workshops, but it is a work in progress. More details will be added over the coming weeks and months."]
        [:table
