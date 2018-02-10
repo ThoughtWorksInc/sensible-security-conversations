@@ -10,7 +10,7 @@
    [:meta {:charset "utf-8"}]
    [:meta {:name    "viewport"
            :content "width=device-width, initial-scale=1"}]
-   (include-css (if (env :dev) "/css/site.css" "/css/site.min.css"))
+   (include-css (if (env :dev) "/css/website.css" "/css/website.min.css"))
    (include-css "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800")
    ])
 
@@ -21,7 +21,9 @@
     (html5
      (head)
      [:body {:class "body-container"}
-      [:h1 "Sensible Security Conversations"]
+      [:div.bigcard
+       [:h1 "Sensible Security Conversations"]
+       ]
       ]
      ))
   )
