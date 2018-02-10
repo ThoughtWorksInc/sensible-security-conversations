@@ -9,8 +9,6 @@
     max-width: 80%;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
-    font-size: 1.125em;
-    line-height: 1.5em;
 }
 
 
@@ -23,8 +21,17 @@ div.content {
     border-width: 0.5px;
     border-color: #f8f8f8;
     background-color: white;
-    line-height: 2.5em;
     position: relative;
+}
+
+h1 {
+    align: center;
+}
+
+p {
+    color: grey;
+    font-weight: lighter;
+    padding: 0.2cm;
 }
 
 ul {
