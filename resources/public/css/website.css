@@ -3,14 +3,50 @@
     margin: 30mm 45mm 30mm 45mm; /* change the margins as you want them to be. */
 }
 
-.body-container {
-    font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
-    background-color: #f8f8f8;
-    max-width: 80%;
-    margin: 0 auto;
-    -webkit-font-smoothing: antialiased;
+body {
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
+/* Custom container */
+.container-narrow {
+    font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin: 0 auto;
+    color: grey;
+    max-width: 700px;
+}
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    margin: 60px 0;
+    text-align: center;
+}
+.jumbotron h1 {
+    font-size: 72px;
+    line-height: 1;
+}
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 60px 0;
+}
+.marketing p + h4 {
+    margin-top: 28px;
+}
 
 div.content {
     margin: 0cm;
@@ -21,7 +57,6 @@ div.content {
     border-width: 0.5px;
     border-color: #f8f8f8;
     background-color: white;
-    color: grey;
     position: relative;
 }
 

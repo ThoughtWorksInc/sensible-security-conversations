@@ -13,7 +13,8 @@
    [:meta {:description "Sensible Security Conversations is a workshop based approach to threat modelling focussed on agile software development teams and modern cloud-based digital systems."}]
    [:meta {:name    "viewport"
            :content "width=device-width, initial-scale=1"}]
-   (include-css (if (env :dev) "/css/website.css" "/css/website.min.css"))
+   (include-css "/css/bootstrap.css" "/css/bootstrap-responsive.css")
+   (include-css "/css/website.css")
    (include-css "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800")
    ])
 
@@ -27,11 +28,13 @@ nversations/raw/master/resources/materials/SensibleSecurityConversations-NCSCDev
         oreilly-talk "https://www.safaribooksonline.com/library/view/oreilly-security-conference/9781491985359/video316717.html"]
     (html5
      (head)
-     [:body {:class "body-container"}
-      [:div.content
+     [:body
+      [:div.container-narrow
+      [:div.masthead
        [:h1 [:image {:alt "Sensible Security Conversations"
                      :src "https://raw.githubusercontent.com/ThoughtWorksInc/sensible-security-conversations/master/banner-logo.png" :width "670"}]]
        [:p "<b>Sensible Security Conversations</b> is a workshop based approach to threat modelling focussed on agile software development teams and modern cloud-based digital systems."]
+       [:hr]
        [:h2 "Materials"]
        [:ul
         [:li "Printable HTML of " [:a {:href "/threats.html"} "Threat Cards"] " for printing out on A4 paper"]
@@ -50,6 +53,7 @@ nversations/raw/master/resources/materials/SensibleSecurityConversations-NCSCDev
         [:li [:a {:href other-deck} "Overview of approach"] " as given at NCSC Developers Den seminar"]
         [:li "O'Reilly Talk by " [:a {:href "https://twitter.com/jgumbley"} "@jgumbley"] " with background " [:a {:href oreilly-talk} "about approach"]]
        ]
+       [:hr]
        [:table
         [:td [:image {:alt "Creative Commons"
                       :src "https://raw.githubusercontent.com/ThoughtWorksInc/sensible-security-conversations/master/cc.png" :width "80"}]]
@@ -57,7 +61,7 @@ nversations/raw/master/resources/materials/SensibleSecurityConversations-NCSCDev
         [:td [:image {:alt "ThoughtWorks"
                       :src "https://raw.githubusercontent.com/ThoughtWorksInc/sensible-security-conversations/master/twlogo.png" :width "80"}]]
         ]
-       ]
+       ]]
       ]
      ))
   )
