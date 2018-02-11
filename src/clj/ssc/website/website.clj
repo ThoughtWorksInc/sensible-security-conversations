@@ -21,10 +21,9 @@
 ;-----------------------------------------------------
 
 (defn index-page []
-  (let [other-deck "https://github.com/ThoughtWorksInc/sensible-security-co      (for [card cards] (draw-threat card))
-nversations/raw/master/resources/materials/SensibleSecurityConversations-NCSCDeveloperDen.pdf"
-        expos-card "https://github.com/ThoughtWorksInc/sensible-security-conversations/raw/master/resources/materials/Sensible-Conversations-VulnerabilityExposureCards.pdf"
-        threat-card "https://github.com/ThoughtWorksInc/sensible-security-conversations/raw/master/resources/materials/Sensible-Conversations-Threats.pdf"
+  (let [other-deck "/materials/SensibleSecurityConversations-NCSCDeveloperDen.pdf"
+        expos-card "/materials/Sensible-Conversations-VulnerabilityExposureCards.pdf"
+        threat-card "/materials/Sensible-Conversations-Threats.pdf"
         oreilly-talk "https://www.safaribooksonline.com/library/view/oreilly-security-conference/9781491985359/video316717.html"]
     (html5
      (head)
