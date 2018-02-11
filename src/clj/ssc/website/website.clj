@@ -34,9 +34,9 @@ nversations/raw/master/resources/materials/SensibleSecurityConversations-NCSCDev
        [:p "<b>Sensible Security Conversations</b> is a workshop based approach to threat modelling focussed on agile software development teams and modern cloud-based digital systems."]
        [:h2 "Materials"]
        [:ul
-        [:li "Printable HTML of " [:a {:href "/threats"} "Threat Cards"] " for printing out on A4 paper"]
+        [:li "Printable HTML of " [:a {:href "/threats.html"} "Threat Cards"] " for printing out on A4 paper"]
         [:li "PDF version of " [:a {:href threat-card} "Threat Cards"] " for printing out on A4 paper"]
-        [:li "Printable HTML of " [:a {:href "/exposure"} "Exposure Cards"] " for printing out on A4 paper"]
+        [:li "Printable HTML of " [:a {:href "/exposure.html"} "Exposure Cards"] " for printing out on A4 paper"]
         [:li "PDF version of " [:a {:href expos-card} "Exposure Cards"] " for printing out on A4 paper"]
         ]
        [:p "This site currently holds the key materials to conduct the workshops, but it is a work in progress. More details will be added over the coming weeks and months."]
