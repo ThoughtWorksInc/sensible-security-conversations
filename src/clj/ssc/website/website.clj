@@ -20,7 +20,8 @@
 ;-----------------------------------------------------
 
 (defn index-page []
-  (let [other-deck "https://github.com/ThoughtWorksInc/sensible-security-conversations/raw/master/resources/materials/SensibleSecurityConversations-NCSCDeveloperDen.pdf"
+  (let [other-deck "https://github.com/ThoughtWorksInc/sensible-security-co      (for [card cards] (draw-threat card))
+nversations/raw/master/resources/materials/SensibleSecurityConversations-NCSCDeveloperDen.pdf"
         expos-card "https://github.com/ThoughtWorksInc/sensible-security-conversations/raw/master/resources/materials/Sensible-Conversations-VulnerabilityExposureCards.pdf"
         threat-card "https://github.com/ThoughtWorksInc/sensible-security-conversations/raw/master/resources/materials/Sensible-Conversations-Threats.pdf"
         oreilly-talk "https://www.safaribooksonline.com/library/view/oreilly-security-conference/9781491985359/video316717.html"]
@@ -31,13 +32,17 @@
        [:h1 [:image {:alt "Sensible Security Conversations"
                      :src "https://raw.githubusercontent.com/ThoughtWorksInc/sensible-security-conversations/master/banner-logo.png" :width "670"}]]
        [:p "<b>Sensible Security Conversations</b> is a workshop based approach to threat modelling focussed on agile software development teams and modern cloud-based digital systems."]
+       [:h2 "Materials"]
        [:ul
-        [:li [:a {:href other-deck} "Overview of approach"] " as given at NCSC Developers Den seminar"]
         [:li "PDF version of " [:a {:href threat-card} "Threat Cards"] " for printing out on A4 paper"]
         [:li "PDF version of " [:a {:href expos-card} "Exposure Cards"] " for printing out on A4 paper"]
+        ]
+       [:p "This site currently holds the key materials to conduct the workshops, but it is a work in progress. More details will be added over the coming weeks and months."]
+       [:h2 "Background"]
+        [:ul
+        [:li [:a {:href other-deck} "Overview of approach"] " as given at NCSC Developers Den seminar"]
         [:li "O'Reilly Talk by " [:a {:href "https://twitter.com/jgumbley"} "@jgumbley"] " with background " [:a {:href oreilly-talk} "about approach"]]
        ]
-       [:p "This site currently holds the key materials to conduct the workshops, but it is a work in progress. More details will be added over the coming weeks and months."]
        [:table
         [:td [:image {:alt "Creative Commons"
                       :src "https://raw.githubusercontent.com/ThoughtWorksInc/sensible-security-conversations/master/cc.png" :width "80"}]]
