@@ -40,6 +40,11 @@ nversations/raw/master/resources/materials/SensibleSecurityConversations-NCSCDev
         [:li "PDF version of " [:a {:href expos-card} "Exposure Cards"] " for printing out on A4 paper"]
         ]
        [:p "This site currently holds the key materials to conduct the workshops, but it is a work in progress. More details will be added over the coming weeks and months."]
+       [:h2 "Feedback"]
+       [:p "Have you tried the workshop or used the materials? Having a puzzle getting started? Raise questions and give your feedback on any ambiguities, puzzles or gaps in the approach. What would you like to see in the materials? What wasn't clear? What doesn't work?"]
+       [:ul
+        [:li [:a {:href "https://github.com/ThoughtWorksInc/sensible-security-conversations/issues/new"} "Leave feedback"] " via project issue tracker"]
+        ]
        [:h2 "Background"]
         [:ul
         [:li [:a {:href other-deck} "Overview of approach"] " as given at NCSC Developers Den seminar"]
