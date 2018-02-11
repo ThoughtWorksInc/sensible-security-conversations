@@ -8,9 +8,12 @@ run:
 
 .PHONY: update
 update: clean
-	wget -P tmp/ -rpk http://localhost:3449/index.html
+	wget -P tmp/ -rpk http://localhost:3449/index.html --content-on-error
+	echo he
 	cd tmp/; mv localhost:3449/ ../docs/
-	cp google98adc5a61a6c45f5.html ./docs/
+	echo he
+	cp ./google98adc5a61a6c45f5.html ./docs/
+	echo he
 	git add -A
 	$(call green,"[Upped]")
 
@@ -18,5 +21,4 @@ update: clean
 .PHONY: clean
 clean:
 	rm -Rf docs/
-	git rm -r docs/
 
