@@ -13,7 +13,7 @@
 (defroutes routes
   (GET "/index.html" [] (index-page))
   (GET "/threats" [] (threats-page))
-  (GET "/vulns-summary" [] (vulns-summary-page))
+  (GET "/exposure" [] (vulns-summary-page))
   (GET "/vulns" [] (vulns-page))
   (GET "/assets" [] (assets-page))
 
