@@ -22,6 +22,7 @@
 
 (defn index-page []
   (let [other-deck "/materials/SensibleSecurityConversations-NCSCDeveloperDen.pdf"
+        motivation-deck "materials/Lessions-Learned-NCSC-Cyber17-Mar17.pdf"
         expos-card "/materials/Sensible-Conversations-VulnerabilityExposureCards.pdf"
         threat-card "/materials/Sensible-Conversations-Threats.pdf"
         oreilly-talk "https://www.safaribooksonline.com/library/view/oreilly-security-conference/9781491985359/video316717.html"]
@@ -50,6 +51,7 @@
        [:h2 "Background"]
         [:ul
         [:li [:a {:href other-deck} "Overview of approach"] " as given at NCSC Developers Den seminar"]
+         [:li [:a {:href motivation-deck} "Motivation for approach"] " from lightening talk given at NCSC Cyber 17 Aglile Track"]
         [:li "O'Reilly Talk by " [:a {:href "https://twitter.com/jgumbley"} "@jgumbley"] " with background " [:a {:href oreilly-talk} "about approach"]]
        ]
        [:hr]
