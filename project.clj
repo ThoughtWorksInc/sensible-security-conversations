@@ -6,6 +6,7 @@
 
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [ring-server "0.4.0"]
+                 [javax.xml.bind/jaxb-api "2.3.0"]
                  [reagent "0.6.0"]
                  [reagent-utils "0.2.0"]
                  [ring "1.5.0"]
@@ -14,7 +15,7 @@
                  [compojure "1.5.1"]
                  [hiccup "1.0.5"]
                  [yogthos/config "0.8"]
-                 [org.clojure/clojurescript "1.9.473"
+                 [org.clojure/clojurescript "1.10.191"
                   :scope "provided"]
                  [secretary "1.2.3"]
                  [clj-yaml "0.4.0"]
@@ -26,7 +27,7 @@
             [lein-asset-minifier "0.2.7"
              :exclusions [org.clojure/clojure]]
             [refactor-nrepl "2.3.1"]
-            [cider/cider-nrepl "0.14.0"]]
+            ]
 
   :ring {:handler card-attempt.handler/app
          :uberwar-name "card-attempt.war"}
@@ -49,6 +50,7 @@
   {:assets
    {"resources/public/css/site.min.css" "resources/public/css/site.css" }
    }
+
 
   :cljsbuild
   {:builds {:min

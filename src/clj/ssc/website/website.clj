@@ -23,6 +23,9 @@
 (defn index-page []
   (let [other-deck "/materials/SensibleSecurityConversations-NCSCDeveloperDen.pdf"
         motivation-deck "materials/Lessions-Learned-NCSC-Cyber17-Mar17.pdf"
+        sens-deck "/materials/Sensible_Agile_Threat_Modelling_Deck.pdf"
+        sens-cards "/materials/Sensible_Agile_Threat_Modelling_Cards.pdf"
+        sens-guide "/materials/Sensible_Agile_Threat_Modelling_Workshop_Guide.pdf"
         expos-card "/materials/Sensible-Conversations-VulnerabilityExposureCards.pdf"
         threat-card "/materials/Sensible-Conversations-Threats.pdf"
         oreilly-talk "https://www.safaribooksonline.com/library/view/oreilly-security-conference/9781491985359/video316717.html"]
@@ -33,27 +36,26 @@
       [:div.masthead
        [:h1 [:image {:alt "Sensible Security Conversations"
                      :src "https://raw.githubusercontent.com/ThoughtWorksInc/sensible-security-conversations/master/banner-logo.png" :width "670"}]]
-       [:p "<b>Sensible Security Conversations</b> is a workshop based approach to threat modelling focussed on agile software development teams and modern cloud-based digital systems."]
+       [:p "Here are some materials to support agile threat modelling for software security on delivery teams, particularly using short, timeboxed, workshops with the STRIDE methodology."]
        [:hr]
-       [:h2 "Materials"]
+       [:h2 "Timeboxed STRIDE"]
        [:ul
-        [:li "Printable HTML of " [:a {:href "/threats.html"} "Threat Cards"] " for printing out on A4 paper"]
-        [:li "PDF version of " [:a {:href threat-card} "Threat Cards"] " for printing out on A4 paper"]
-        [:li "Printable HTML of " [:a {:href "/exposure.html"} "Exposure Cards"] " for printing out on A4 paper"]
-        [:li "PDF version of " [:a {:href expos-card} "Exposure Cards"] " for printing out on A4 paper"]
-        ]
-       [:p "This site currently holds the key materials to conduct the workshops, but it is a work in progress. More details will be added over the coming weeks and months."]
-       [:h2 "Feedback"]
-       [:p "Have you tried the workshop or used the materials? Having a puzzle getting started? Raise questions and give your feedback on any ambiguities, puzzles or gaps in the approach. What would you like to see in the materials? What wasn't clear? What doesn't work?"]
-       [:ul
-        [:li [:a {:href "https://github.com/ThoughtWorksInc/sensible-security-conversations/issues/new"} "Leave feedback"] " via project issue tracker"]
+        [:li "Detailed workshop guide" [:a {:href sens-deck} " to agile threat modelling"] " for facilitators"]
+        [:li "Slide deck to" [:a {:href sens-deck} " introduce team to STRIDE"] " and how to do Agile threat modelling"]
+        [:li "Printable A5 Cue cards" [:a {:href sens-cards} " for STRIDE"] " to support workshop"]
         ]
        [:h2 "Background"]
         [:ul
-        [:li [:a {:href other-deck} "Overview of approach"] " as given at NCSC Developers Den seminar"]
+        [:li [:a {:href other-deck} "Overview of motivations and approach"] " as given at NCSC Developers Den seminar"]
          [:li [:a {:href motivation-deck} "Motivation for approach"] " from lightening talk given at NCSC Cyber 17 Aglile Track"]
-        [:li "O'Reilly Talk by " [:a {:href "https://twitter.com/jgumbley"} "@jgumbley"] " with background " [:a {:href oreilly-talk} "about approach"]]
+        [:li "Mostly outdated O'Reilly Talk by " [:a {:href "https://twitter.com/jgumbley"} "@jgumbley"] " with background thinking about finding a continuous" [:a {:href oreilly-talk} " approach"]]
        ]
+       [:h2 "Security Objectives"]
+       [:p "Sometimes you want to run an exercise with business stakeholders rather than focussed on technology. These can help."]
+       [:ul
+        [:li "Printable HTML of " [:a {:href "/threats.html"} "Threat Cards"] " for printing out on A4 paper"]
+        [:li "PDF version of " [:a {:href threat-card} "Threat Cards"] " for printing out on A4 paper"]
+        ]
        [:hr]
        [:table
         [:td [:image {:alt "Creative Commons"
