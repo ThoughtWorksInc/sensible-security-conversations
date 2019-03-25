@@ -40,7 +40,7 @@
        [:hr]
        [:h2 "Timeboxed STRIDE"]
        [:ul
-        [:li "Detailed workshop guide" [:a {:href sens-deck} " to agile threat modelling"] " for facilitators"]
+        [:li "Detailed workshop guide" [:a {:href sens-guide} " to agile threat modelling"] " for facilitators"]
         [:li "Slide deck to" [:a {:href sens-deck} " introduce team to STRIDE"] " and how to do Agile threat modelling"]
         [:li "Printable A5 Cue cards" [:a {:href sens-cards} " for STRIDE"] " to support workshop"]
         ]
