@@ -34,7 +34,7 @@
      [:body
       [:div.container-narrow
       [:div.masthead
-       [:h1 [:image {:alt "Sensible Security Conversations"
+       [:h1 [:image {:alt "Agile Threat Modelling"
                      :src "https://raw.githubusercontent.com/ThoughtWorksInc/sensible-security-conversations/master/agile-tm.png" :width "670"}]]
        [:p "Here are some materials to support agile threat modelling for software security on delivery teams, particularly using short, timeboxed, workshops with the STRIDE methodology."]
        [:hr]
