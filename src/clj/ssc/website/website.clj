@@ -8,9 +8,9 @@
 
 (defn head []
   [:head
-   [:title "Sensible Security Conversations - Threat modelling workshop for agile software teams"]
+   [:title "Agile Threat Modelling - Workshop resource for threat modelling on agile software teams"]
    [:meta {:charset "utf-8"}]
-   [:meta {:description "Sensible Security Conversations is a workshop based approach to threat modelling focussed on agile software development teams and modern cloud-based digital systems."}]
+   [:meta {:description "Agile Threat Modelling - a workshop based approach to threat modelling focussed on agile software development teams and modern cloud-based digital systems."}]
    [:meta {:name    "viewport"
            :content "width=device-width, initial-scale=1"}]
    (include-css "/css/bootstrap.css" "/css/bootstrap-responsive.css")
